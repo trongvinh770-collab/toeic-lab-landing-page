@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE TOEIC LAB | Đăng Nhập Hệ Thống</title>
+    <link rel="stylesheet" href="login_style.css"> 
+</head>
+<body>
+    <div class="login-container">
+        <img src="1.jpg" alt="THE TOEIC LAB Logo" class="login-logo">
+        
+        <h2>Đăng Nhập Học Viên</h2>
+        <p>Vui lòng nhập thông tin để truy cập khóa học.</p>
+
+        <form id="login-form">
+            <div class="form-group">
+                <label for="username">Tên đăng nhập (Email/SĐT):</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <button type="submit" class="btn-login">Đăng Nhập</button>
+            
+            <p id="error-message" class="error-text"></p>
+        </form>
+
+        <a href="#" class="forgot-password">Quên mật khẩu?</a>
+    </div>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('error-message');
+            
+            // LOGIC ĐĂNG NHẬP (Giả định)
+            // Thay thế bằng logic kiểm tra thực tế sau này (Database/API)
+            if (username === 'hoangvinh1912' && password === 'thanhhuong') {
+                // Đăng nhập thành công: Chuyển hướng sang trang chính (index.html)
+                window.location.href = 'index.html'; 
+            } else {
+                // Đăng nhập thất bại
+                errorMessage.textContent = 'Sai tên đăng nhập hoặc mật khẩu. Vui lòng thử lại.';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+/* =========================================================
+   LOGIN_STYLE.CSS | THIẾT KẾ TRANG ĐĂNG NHẬP
+   ========================================================= */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Nền gradient nhẹ nhàng */
+    background: linear-gradient(135deg, #f0f4f8 0%, #e0e7ee 100%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.login-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); /* Bóng đổ mềm mại */
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.login-logo {
+    width: 150px; /* Kích thước logo vừa phải */
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #D32F2F; /* Màu đỏ chủ đạo */
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #D32F2F;
+    box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.2); /* Hiệu ứng focus tinh tế */
+    outline: none;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50; /* Màu xanh lá (Thành công/Đăng nhập) */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+    box-shadow: 0 4px 10px rgba(76, 175, 80, 0.4);
+}
+
+.btn-login:hover {
+    background-color: #43A047;
+    transform: translateY(-2px);
+}
+
+.error-text {
+    color: #D32F2F;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 20px;
+    color: #D32F2F;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.forgot-password:hover {
+    color: #B71C1C;
+    text-decoration: underline;
+}
