@@ -40,10 +40,9 @@
             const errorMessage = document.getElementById('error-message');
             
             // LOGIC ĐĂNG NHẬP (Giả định)
-            // Thay thế bằng logic kiểm tra thực tế sau này (Database/API)
-            if (username === 'hoangvinh1912' && password === 'thanhhuong') {
-                // Đăng nhập thành công: Chuyển hướng sang trang chính (index.html)
-                window.location.href = 'index.html'; 
+            if (username === 'admin' && password === '123') {
+                // Đăng nhập thành công: Chuyển hướng sang trang khóa học chính
+                window.location.href = 'main.html'; 
             } else {
                 // Đăng nhập thất bại
                 errorMessage.textContent = 'Sai tên đăng nhập hoặc mật khẩu. Vui lòng thử lại.';
